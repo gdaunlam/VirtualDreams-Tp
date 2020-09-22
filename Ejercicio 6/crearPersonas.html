@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crear Persona</title>
+    <style>
+      body {
+        background: linear-gradient(rgb(82, 82, 82) 40%, white 250%);
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+      }
+      form {
+        margin-top: 80px !important;
+        margin: auto;
+        width: min-content;
+        background-color: rgba(255, 255, 255, 0.048);
+        padding: 30px;
+        border-radius: 10px;
+      }
+      input {
+        height: 20px;
+        border: none;
+        padding: 5px;
+        margin: 5px;
+      }
+      .tittle {
+        font-weight: inherit;
+        text-shadow: 0px 0px 7px #272727;
+        color: #d0d0d0;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .submitContainer {
+        text-align: end;
+      }
+      input[type="submit"] {
+        height: 100%;
+        border: none;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://localhost:3000" method="POST">
+      <h1 class="tittle">REGISTRO</h1>
+
+
+      <div class="inputContainer"></div>
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Ingrese su nombre"
+          name="nombre"
+        />
+      </div>
+      <div class="inputContainer">
+        <input
+          type="text"
+          id="apellido"
+          required="required"
+          placeholder="Ingrese su apellido"
+          name="apellido"
+        />
+      </div>
+      <div class="inputContainer">
+        <input
+          type="number"
+          id="dni"
+          max="9999999999"
+          required="required"
+          placeholder="Ingrese su dni"
+          name="dni"
+        />
+      </div>
+      <div class="submitContainer">
+        <input type="submit" value="Enviar" />
+      </div>
+    </form>
+  </body>
+</html>
